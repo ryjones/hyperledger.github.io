@@ -16,6 +16,14 @@
                 document.getElementById("body").innerHTML = "Caliper has moved!<br/><br/>Redirecting to " + redirectLocation + " ...";
                 window.location.href = redirectLocation;
             }
+            if (window.location.href.includes("hyperledger.github.io/cacti")) {
+                const redirectLocation = window.location.href.replace(
+                    "hyperledger.github.io/cacti",
+                    "hyperledger-cacti.github.io/cacti"
+                );
+                document.getElementById("body").innerHTML = "Cacti has moved!<br/><br/>Redirecting to " + redirectLocation + " ...";
+                window.location.href = redirectLocation;
+            }
         }
     </script>
 </head>
